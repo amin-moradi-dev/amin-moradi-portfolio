@@ -1,0 +1,118 @@
+/* style.css */
+
+/* Root colors: black & white theme */
+:root {
+  --primary: #000; /* headings and accents */
+  --secondary: #f9f9f9; /* background for container */
+  --text: #000; /* main text */
+  --light: #fff; /* header/footer text */
+  --gray: #555; /* secondary text */
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: var(--secondary);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+header {
+  background: var(--text);
+  color: var(--light);
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2rem;
+}
+
+header p {
+  margin-top: 0.5rem;
+  font-weight: 300;
+}
+
+header a {
+  color: var(--light);
+  text-decoration: none;
+}
+
+header a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 900px;
+  margin: 2rem auto;
+  background: var(--light);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: var(--text);
+  border-left: 4px solid var(--text);
+  padding-left: 10px;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.section p,
+li {
+  margin-bottom: 0.5rem;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li::before {
+  content: "• ";
+  color: var(--text);
+  font-weight: bold;
+}
+
+.skills,
+.projects,
+.contact {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.projects a {
+  display: inline-block;
+  margin-top: 0.25rem;
+  color: var(--text);
+  font-weight: 500;
+}
+
+footer {
+  text-align: center;
+  margin-top: 3rem;
+  padding: 1rem;
+  background: var(--text);
+  color: var(--light);
+  border-radius: 0 0 12px 12px;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 1.5rem;
+  }
+}
