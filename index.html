@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amin Moradi | Full-Stack Developer Portfolio</title>
+  <style>
+    :root {
+      --primary: #6a0dad;
+      --secondary: #ece6f8;
+      --text: #2b2b2b;
+      --light: #ffffff;
+      --gray: #777;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background: var(--secondary);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--primary);
+      color: var(--light);
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2rem;
+    }
+
+    header p {
+      margin-top: 0.5rem;
+      font-weight: 300;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      background: var(--light);
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      color: var(--primary);
+      border-left: 4px solid var(--primary);
+      padding-left: 10px;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .section p, li {
+      margin-bottom: 0.5rem;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    ul li::before {
+      content: "• ";
+      color: var(--primary);
+      font-weight: bold;
+    }
+
+    .skills, .projects, .contact {
+      display: grid;
+      gap: 0.5rem;
+    }
+
+    .projects a {
+      display: inline-block;
+      margin-top: 0.25rem;
+      color: var(--primary);
+      font-weight: 500;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 3rem;
+      padding: 1rem;
+      background: var(--primary);
+      color: var(--light);
+      border-radius: 0 0 12px 12px;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 1.5rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Amin Moradi</h1>
+    <p>Full-Stack Developer | Montréal, Canada</p>
+    <p>
+      <a href="mailto:amin.moradi.dev@gmail.com" style="color:#fff;">amin.moradi.dev@gmail.com</a> | 
+      <a href="https://github.com/amin-moradi-dev" target="_blank" style="color:#fff;">GitHub</a> | 
+      <a href="https://www.linkedin.com/in/amin-moradi-dev/" target="_blank" style="color:#fff;">LinkedIn</a>
+    </p>
+  </header>
+
+  <div class="container">
+    <section class="about section">
+      <h2>About Me</h2>
+      <p>
+        I’m a career changer transitioning into <strong>Full-Stack Development</strong>, currently completing a program at
+        <strong>John Abbott College, Montréal</strong>. My passion is building scalable, maintainable web applications
+        that combine solid functionality with clean, intuitive design. With a background in content creation and graphic design,
+        I bring creativity, precision, and storytelling to the world of code.
+      </p>
+    </section>
+
+    <section class="skills section">
+      <h2>Technical Skills</h2>
+      <p><strong>Languages:</strong> JavaScript, Java, PHP</p>
+      <p><strong>Front-End:</strong> HTML5, CSS3, Bootstrap, Tailwind CSS</p>
+      <p><strong>Back-End:</strong> Spring Boot (Java)</p>
+      <p><strong>Databases:</strong> MySQL, MongoDB, Redis</p>
+      <p><strong>Version Control:</strong> Git, GitHub</p>
+      <p><strong>APIs:</strong> RESTful APIs, JSON, XML</p>
+      <p><strong>Other:</strong> AWS, Agile/Scrum</p>
+    </section>
+
+    <section class="softskills section">
+      <h2>Soft Skills</h2>
+      <ul>
+        <li>Problem-Solving</li>
+        <li>Attention to Detail</li>
+        <li>Collaboration & Teamwork</li>
+        <li>Time Management</li>
+        <li>Creativity</li>
+      </ul>
+    </section>
+
+    <section class="projects section">
+      <h2>Projects</h2>
+      <p><strong>🕹️ Snakes and Ladders Game</strong><br>
+        A Java-based console game showcasing OOP concepts and logic design.</p>
+      <p><strong>🌐 Reddit Clone Website</strong><br>
+        Built with Spring Boot, MySQL, and Tailwind CSS. Implements authentication, CRUD posts, and voting features.
+      </p>
+    </section>
+
+    <section class="education section">
+      <h2>Education</h2>
+      <p><strong>Full-Stack Programming</strong> — John Abbott College <br>
+      <em>March 2025 – Present</em></p>
+      <p><strong>Graphic Design</strong> — John Abbott College <br>
+      <em>January 2024 – November 2024</em></p>
+    </section>
+
+    <section class="experience section">
+      <h2>Experience</h2>
+      <p><strong>Content Creator</strong> — Montréal, QC <br>
+      <em>July 2021 – March 2025</em><br>
+      Created multimedia content for social media, maintained brand consistency, and analyzed engagement metrics.</p>
+
+      <p><strong>Electronic Circuit Assembler</strong> — KS2Corp, Montréal, QC <br>
+      <em>January 2021 – June 2021</em><br>
+      Assembled electrical circuits and battery cables with attention to detail and quality control.</p>
+    </section>
+
+    <section class="languages section">
+      <h2>Languages</h2>
+      <p>English • French</p>
+    </section>
+  </div>
+
+  <footer>
+    <p>© 2025 Amin Moradi — Built with 💜 and HTML/CSS</p>
+  </footer>
+</body>
+</html>
